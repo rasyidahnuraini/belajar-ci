@@ -12,6 +12,11 @@ class Home extends BaseController
     $this->productModel = new ProductModel();
 }
 
+    public function profile()
+{
+    return view('v_profile');
+}
+
     public function index(): string
     {
         return view('v_home', [
